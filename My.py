@@ -9,10 +9,10 @@ def initialize_gee():
     """
     try:
         # 1. Load the Service Account key from environment variables
-        key_json = os.environ.get('GEE_JSON_KEY')
+        key_json = os.environ.get('github-My-robot')
         
         if not key_json:
-            print("❌ ERROR: GEE_JSON_KEY not found in environment.")
+            print("❌ ERROR: github-My-robot not found in environment.")
             return False
 
         # 2. Parse the JSON to get the service account email
